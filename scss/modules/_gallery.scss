@@ -1,0 +1,32 @@
+.gallery {
+  text-align: center;
+  &__line {
+    padding-top: 140px;
+  }
+  &__col {
+    padding: 0px;
+  }
+  &__images {
+    margin-bottom: 60px;
+  }
+
+  &__imgBig {
+    @include size(580px, 440px);
+    padding-right: 10px;
+    position: relative;
+  }
+
+  &__360 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__imgSmall {
+    display: block;
+    @include size(285px, 215px);
+    margin-bottom: 10px;
+    padding-right: 10px;
+  }
+}

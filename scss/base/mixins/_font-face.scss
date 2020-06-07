@@ -10,13 +10,13 @@
     font-weight: $weight;
     font-style: $style;
 
-    src: url("#{$path}.eot#{$ver}");
-    src: url("#{$path}.eot?#iefix") format("embedded-opentype"),
-      url("#{$path}.woff2#{$ver}") format("woff2"),
-      url("#{$path}.woff#{$ver}") format("woff"),
-      url("#{$path}.ttf#{$ver}") format("truetype"),
-      url("#{$path}.svg#{$ver}##{$font-family}") format("svg");
+    // src: url("#{$path}.eot#{$ver}");
+    src: url("#{$path}.woff#{$ver}") format("woff");
+    // url("#{$path}.ttf#{$ver}") format("truetype"),
+    // url("#{$path}.svg#{$ver}##{$font-family}") format("svg");
   }
 }
 
-@include font-face("Got", "../fonts/GothamBook/GothamBook");
+@include font-face("Gotham-book", "../fonts/gothambook", small);
+@include font-face("Gotham-bold", "../fonts/gothambold", bold);
+@include font-face("Gotham-normal", "../fonts/gothammedium");

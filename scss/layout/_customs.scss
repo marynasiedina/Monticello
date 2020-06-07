@@ -1,0 +1,37 @@
+.button {
+  font-size: 14px;
+  font-family: $got;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $darkBlue;
+  display: inline block;
+  border: solid 1px black;
+  padding: 20px 40px;
+  transition: all 0.3s;
+
+  &:hover {
+    color: $white;
+    border: $blue solid 1px;
+    background: linear-gradient(
+      32deg,
+      rgba(8, 238, 235, 0.7) 0%,
+      rgba(166, 9, 238, 0.7) 100%
+    );
+  }
+}
+
+.line {
+  margin: auto;
+  width: 100px;
+  height: 1.5px;
+  background: $darkBlue;
+}
+
+.title {
+  margin: 40px auto 100px;
+  font-size: 44px;
+  font-family: $gotBold;
+  text-align: center;
+  text-transform: uppercase;
+  color: $darkBlue;
+}
