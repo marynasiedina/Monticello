@@ -200,7 +200,8 @@ html {
   background: url("../images/headerBG.png") no-repeat left, -webkit-gradient(linear, left bottom, left top, from(#55b7ff), to(#7e5aff));
   background: url("../images/headerBG.png") no-repeat left, linear-gradient(to top, #55b7ff, #7e5aff);
   background-size: cover;
-  height: 100vh;
+  height: 800px;
+  position: relative;
 }
 
 .navigation {
@@ -308,7 +309,7 @@ html {
 
 .main {
   text-align: center;
-  margin-top: 20vw;
+  margin-top: 300px;
 }
 
 .main__title {
@@ -745,5 +746,12 @@ html {
 
 .footer__nav__info > p .love {
   padding-left: 10px;
+}
+
+.social--footer {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  margin-top: 7px;
 }
 /*# sourceMappingURL=styles.css.map */

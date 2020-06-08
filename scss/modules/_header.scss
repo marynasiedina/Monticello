@@ -2,7 +2,8 @@
   background: url("../images/headerBG.png") no-repeat left,
     linear-gradient(to top, #55b7ff, #7e5aff);
   background-size: cover;
-  height: 100vh;
+  height: 800px;
+  position: relative;
 }
 
 .navigation {
@@ -90,7 +91,7 @@
 
 .main {
   text-align: center;
-  margin-top: 20vw;
+  margin-top: 300px;
 
   &__title {
     font-family: $gotBold;
