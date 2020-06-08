@@ -1,0 +1,77 @@
+.contact {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 375px;
+  z-index: 1;
+  width: 770px;
+  height: 450px;
+  background: url("../images/formBG.png") no-repeat bottom, $white;
+
+  &__line {
+    padding-top: 60px;
+  }
+
+  & .title--form {
+    margin: 30px auto 60px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__item {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      font-family: $got;
+      font-size: 14px;
+    }
+
+    &__item:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.button--form {
+  background: transparent;
+  padding: 16px 30px;
+  width: 140px;
+  height: 50px;
+  align-self: flex-end;
+}
+
+.form__name,
+.form__mail {
+  font-family: $got;
+  color: $darkBlue;
+  height: 30px;
+  font-size: 18px;
+  padding-bottom: 15px;
+  margin-bottom: 35px;
+  border-bottom: 1.5px solid $grey;
+
+  &:focus {
+    border-bottom: 1.5px solid $blue;
+  }
+}

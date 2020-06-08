@@ -65,12 +65,14 @@
     &__location {
       margin-top: 60px;
       font-size: 18px;
+      color: $darkBlue;
       font-family: $openSans;
       font-weight: bold;
       font-style: italic;
       & .logo-location {
         width: 18px;
         height: 18px;
+        fill: $darkBlue;
       }
     }
   }
