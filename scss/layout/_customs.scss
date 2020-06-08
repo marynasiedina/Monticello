@@ -35,3 +35,55 @@
   text-transform: uppercase;
   color: $darkBlue;
 }
+
+.slick-slide {
+  margin: 0 15px;
+}
+
+.slick-arrow {
+  width: 40px;
+  height: 40px;
+  border: 1px solid $white;
+  border-radius: 50%;
+  top: 45%;
+}
+
+.slick-prev {
+  left: -60px;
+  background: url("../images/back.svg") 45% 50% / 50% no-repeat;
+}
+
+.slick-next {
+  right: -60px;
+  background: url("../images/next.svg") 55% 50% / 50% no-repeat;
+}
+
+.slick-prev:hover,
+.slick-prev:focus {
+  background: url("../images/back.svg") 45% 50% / 50% no-repeat;
+}
+.slick-next:hover,
+.slick-next:focus {
+  background: url("../images/next.svg") 55% 50% / 50% no-repeat;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: "";
+}
+
+.slick-dots li {
+  margin: 0 20px;
+}
+
+.slick-dots li button::before {
+  font-size: 8px;
+  content: "";
+  border-radius: 50%;
+  border: 1.5px solid $white;
+}
+
+.slick-dots li.slick-active {
+  background: $white;
+  border-radius: 50%;
+}
