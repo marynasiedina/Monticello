@@ -245,4 +245,10 @@ $(document).ready(function () {
     pauseOnHover: false,
     dots: true,
   });
+
+  $('a[href^="#"]').click(function () {
+    let target = $(this).attr("href");
+    $("html, body").animate({ scrollTop: $(target).offset().top }, 2000);
+    return false;
+  });
 });
