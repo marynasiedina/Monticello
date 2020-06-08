@@ -672,6 +672,11 @@ html {
   margin-right: 10px;
 }
 
+.contact-item {
+  text-decoration: none;
+  color: #2c4058;
+}
+
 .contact__form {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -724,30 +724,44 @@
                   <svg class="contact-icon">
                     <use xlink:href="images/sprite.svg#marker"></use>
                   </svg>
-                  <p class="item">91 nolan extensions suite 670</p>
+                  <p class="contact-item">91 nolan extensions suite 670</p>
                 </li>
                 <li class="contact__info__item">
                   <svg class="contact-icon">
                     <use xlink:href="images/sprite.svg#phone"></use>
                   </svg>
-                  <p class="item">+001-356-868-2454</p>
+                  <a href="tel:+001 356-868-2454" class="contact-item"
+                    >+001 356-868-2454</a
+                  >
                 </li>
                 <li class="contact__info__item">
                   <svg class="contact-icon">
                     <use xlink:href="images/sprite.svg#mail"></use>
                   </svg>
-                  <p class="item">gahuy93@gmail.com</p>
+                  <a href="mailto:gahuy93@gmail.com" class="contact-item"
+                    >gahuy93@gmail.com</a
+                  >
                 </li>
                 <li class="contact__info__item">
                   <svg class="contact-icon">
                     <use xlink:href="images/sprite.svg#time"></use>
                   </svg>
-                  <p class="item">From 07:05AM to 19:30PM</p>
+                  <p class="contact-item">From 07:05AM to 19:30PM</p>
                 </li>
               </ul>
               <form class="contact__form" action="get">
-                <input class="form__name" type="name" placeholder="Name" />
-                <input class="form__mail" type="mail" placeholder="Email" />
+                <input
+                  class="form__name"
+                  type="name"
+                  name="name"
+                  placeholder="Name"
+                />
+                <input
+                  class="form__mail"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
                 <button class="button button--form" type="submit">
                   Submit
                 </button>

@@ -46,6 +46,11 @@
     margin-right: 10px;
   }
 
+  &-item {
+    text-decoration: none;
+    color: $darkBlue;
+  }
+
   &__form {
     display: flex;
     flex-direction: column;
