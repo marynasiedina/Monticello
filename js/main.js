@@ -238,11 +238,9 @@ function initMap() {
 
 $(document).ready(function () {
   $(".slider").slick({
-    arrows: true,
     slidesToShow: 3,
     autoplay: true,
     autoplaySpeed: 3000,
-    pauseOnHover: false,
     dots: true,
   });
 
