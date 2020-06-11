@@ -4,7 +4,6 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $darkBlue;
-  display: inline block;
   border: solid 1px black;
   padding: 20px 40px;
   transition: all 0.3s;
@@ -74,10 +73,13 @@
 
 .slick-dots li {
   margin: 0 20px;
+  width: 10px;
+  height: 10px;
 }
 
 .slick-dots li button::before {
-  font-size: 8px;
+  width: 10px;
+  height: 10px;
   content: "";
   border-radius: 50%;
   border: 1.5px solid $white;

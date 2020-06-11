@@ -114,7 +114,6 @@ html {
   text-transform: uppercase;
   text-decoration: none;
   color: #2c4058;
-  display: inline block;
   border: solid 1px black;
   padding: 20px 40px;
   -webkit-transition: all 0.3s;
@@ -182,10 +181,13 @@ html {
 
 .slick-dots li {
   margin: 0 20px;
+  width: 10px;
+  height: 10px;
 }
 
 .slick-dots li button::before {
-  font-size: 8px;
+  width: 10px;
+  height: 10px;
   content: "";
   border-radius: 50%;
   border: 1.5px solid white;
@@ -199,6 +201,7 @@ html {
 #header {
   background: url("../images/headerBG.png") no-repeat center top, -webkit-gradient(linear, left bottom, left top, from(#55b7ff), to(#7e5aff));
   background: url("../images/headerBG.png") no-repeat center top, linear-gradient(to top, #55b7ff, #7e5aff);
+  background-size: cover;
   height: 800px;
   position: relative;
 }
@@ -243,10 +246,12 @@ html {
   position: absolute;
   width: 9px;
   height: 9px;
-  top: 30%;
+  top: 50%;
   left: -20px;
   border: white 1px solid;
   border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .menu__item:hover::before {
@@ -258,12 +263,13 @@ html {
 }
 
 .menu__link {
+  display: table-cell;
+  vertical-align: middle;
   font-family: "Gotham-book";
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-  line-height: 1.57;
 }
 
 .social {
@@ -308,7 +314,7 @@ html {
 
 .main {
   text-align: center;
-  margin-top: 300px;
+  margin-top: 270px;
 }
 
 .main__title {
@@ -316,7 +322,6 @@ html {
   font-size: 80px;
   text-transform: uppercase;
   color: white;
-  line-height: 0.28;
   letter-spacing: 4px;
   margin-bottom: 39px;
 }
@@ -540,6 +545,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 10px 20px 30px;
 }
 
@@ -551,9 +559,8 @@ html {
 .author__info__name {
   color: #2c4058;
   font-size: 18px;
-  line-height: 1.22;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .author__info__date {
@@ -691,9 +698,10 @@ html {
 
 .button--form {
   background: transparent;
-  padding: 16px 30px;
+  padding: 0 30px;
   width: 140px;
   height: 50px;
+  line-height: inherit;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }

@@ -54,6 +54,7 @@
 
   &__author {
     display: flex;
+    align-items: center;
     margin: 10px 20px 30px;
   }
 }
@@ -65,9 +66,8 @@
   &__name {
     color: $darkBlue;
     font-size: 18px;
-    line-height: 1.22;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
   }
 
   &__date {
